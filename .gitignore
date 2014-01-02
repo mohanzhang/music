@@ -1,0 +1,6 @@
+.cabal-sandbox
+dist
+_cache
+_site
+deploy
+.sass-cache

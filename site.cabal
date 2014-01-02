@@ -1,0 +1,12 @@
+Name:                 lyrics
+Version:              0.0.1
+Description:          A subsite for lyrics
+Author:               Mohan Zhang
+Maintainer:           mohan@mohanzhang.com
+Build-Type:           Simple
+Cabal-Version:        >=1.8
+
+Executable site
+  Main-is:            Site.hs
+  Build-Depends:      base,
+                      hakyll
