@@ -1,25 +1,28 @@
 .container
   .row
     .col-md-4
-      %img.img-responsive.img-rounded(alt="The Every Mile Made Yours EP" src="img/the_every_mile_made_yours_ep_cover.png")
-      %hr
-      %ul.nav.bs-sidenav
-        %li
-          %a(href="#") Brackish Water
-        %li
-          %a(href="#") The Ocean Spins Backwards
-        %li
-          %a(href="#") Six Kilometers to Edoras
-        %li
-          %a(href="#") Mountaineers and Sailors
-        %li
-          %a(href="#") Proof That Journeys Never End
-      %hr
+      #sidenav(data-spy="affix")
+        .sidebar.hidden-print(role="complementary")
+          %img.img-responsive.img-rounded(alt="The Every Mile Made Yours EP" src="img/the_every_mile_made_yours_ep_cover.png")
+            %hr
+            %ul.nav.nav-list
+              %li
+                %a(href="#brackish-water") Brackish Water
+              %li
+                %a(href="#the-ocean-spins-backwards") The Ocean Spins Backwards
+              %li
+                %a(href="#six-kilometers-to-edoras") Six Kilometers to Edoras
+              %li
+                %a(href="#mountaineers-and-sailors") Mountaineers and Sailors
+              %li
+                %a(href="#proof-that-journeys-never-end") Proof That Journeys Never End
+            %hr
 
     .col-md-8
-      %h2
-        The Every Mile Made Yours EP
-        %small
-          %span.label.label-primary 2013
-      %hr
-      $html_lyrics$
+      %div(role="main")
+        %h2
+          The Every Mile Made Yours EP
+          %small
+            %span.label.label-primary 2013
+        %hr
+        $html_lyrics$

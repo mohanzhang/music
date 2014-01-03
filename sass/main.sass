@@ -1,4 +1,26 @@
+=slab-serif
+  font-family: museo-slab
+
+body
+  h1, h2, h3, h4, h5, h6
+    +slab-serif
+
+.navbar-brand
+  +slab-serif
+
+#sidenav
+  li.active
+    background: #E4E2C9
+
 #footer
   margin-top: 30px
   padding: 5px
   text-align: center
+
+@media screen and (min-width: 992px)
+  .sidebar
+    width: 293px
+
+@media screen and (max-width: 991px)
+  .affix
+    position: static
