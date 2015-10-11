@@ -38,6 +38,13 @@ main = do
       route $ setExtension "html"
       compile $ do
         let lyricsContext =
+              field "html_lyrics" (\_ -> loadSnapshotBody "albums/2015_western_hearts_pacific_skies_ep.textile" "html_lyrics")
+        haml >>= applyAsTemplate lyricsContext >>= loadAndApplyTemplate "layout.html" defaultContext
+
+    match "emmy_ep.haml" $ do
+      route $ setExtension "html"
+      compile $ do
+        let lyricsContext =
               field "html_lyrics" (\_ -> loadSnapshotBody "albums/2013_the_every_mile_made_yours_ep.textile" "html_lyrics")
         haml >>= applyAsTemplate lyricsContext >>= loadAndApplyTemplate "layout.html" defaultContext
 

@@ -3,26 +3,31 @@
     .col-md-4
       #sidenav(data-spy="affix")
         .sidebar.hidden-print(role="complementary")
-          %img.img-responsive.img-rounded(alt="The Every Mile Made Yours EP" src="img/the_every_mile_made_yours_ep_cover.png")
+          %img.img-responsive.img-rounded(alt="Western Hearts Pacific Skies EP" src="img/western_hearts_pacific_skies_ep_cover.png")
             %hr
             %ul.nav.nav-list
               %li
-                %a(href="#brackish-water") Brackish Water
+                %a(href="#we-had-so-much-left-to-explore") We Had So Much Left To Explore
               %li
-                %a(href="#the-ocean-spins-backwards") The Ocean Spins Backwards
+                %a(href="#promontory") Promontory
               %li
-                %a(href="#six-kilometers-to-edoras") Six Kilometers to Edoras
+                %a(href="#sunchasers") Sunchasers
               %li
-                %a(href="#mountaineers-and-sailors") Mountaineers and Sailors
+                %a(href="#the-columbia-light") The Columbia Light
               %li
-                %a(href="#proof-that-journeys-never-end") Proof That Journeys Never End
+                %a(href="#october-sky") October Sky
             %hr
 
     .col-md-8
       %div(role="main")
         %h2
-          The Every Mile Made Yours EP
+          Western Hearts &middot; Pacific Skies EP
           %small
-            %span.label.label-primary 2013
+            %span.label.label-primary 2015
         %hr
         $html_lyrics$
+
+:javascript
+  jQuery(function() {
+    jQuery('ul.nav a[href="index.html"]').parent().addClass('active');
+  });
